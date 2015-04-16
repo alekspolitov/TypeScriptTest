@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"br",
+				"browserify"
+			],
+			[
+				"plu",
+				"plumber"
+			],
+			[
+				"greet",
+				"greeting"
+			],
+			[
+				"t",
+				" ○ text (method) JQuery.text(): string (+2 overloads)"
+			],
+			[
+				"get",
+				" ○ getElementById (method) Document.getElementById(elementId: string): HTMLElement"
+			],
+			[
 				"mo",
 				" ○ module (method) angular.IAngularStatic.module(name: string, requires?: string[], configFn?: Function): ng.IModule"
 			],
@@ -22,10 +42,6 @@
 			[
 				"w",
 				"window	var"
-			],
-			[
-				"get",
-				"getElementById	method"
 			],
 			[
 				"sa",
@@ -63,7 +79,7 @@
 			"file": "main.ts",
 			"settings":
 			{
-				"buffer_size": 396,
+				"buffer_size": 499,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,8 +87,16 @@
 			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 1272,
+				"buffer_size": 999,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TypeScriptTest.sublime-project",
+			"settings":
+			{
+				"buffer_size": 165,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -83,17 +107,17 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 135.0,
-		"last_filter": "remove",
+		"height": 375.0,
+		"last_filter": "set",
 		"selected_items":
 		[
 			[
-				"remove",
-				"Package Control: Remove Package"
+				"set",
+				"Set Syntax: JavaScript"
 			],
 			[
-				"set",
-				"Set Syntax: Python"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
 				"ins",
@@ -211,12 +235,14 @@
 	],
 	"file_history":
 	[
+		"/C/Projects/TypeScriptTest/package.json",
+		"/C/Projects/TypeScriptTest/gulpfile.js",
+		"/c/projects/typescripttest/typings/jquery/jquery.d.ts",
 		"/c/projects/typescripttest/tsconfig.json",
 		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/ArcticTypescript/examples/basic_browser_project/tsconfig.json",
 		"/C/Projects/TypeScriptTest/tsconfig.json",
 		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
 		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
-		"/C/Projects/TypeScriptTest/package.json",
 		"/C/Projects/TypeScriptTest/.tsdrc",
 		"/C/Projects/TypeScriptTest/main.ts",
 		"/C/Projects/TypeScriptTest/TypeScriptTest.sublime-project",
@@ -291,7 +317,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -300,15 +326,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 396,
+						"buffer_size": 499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								343,
-								343
+								499,
+								499
 							]
 						],
 						"settings":
@@ -325,7 +351,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -334,24 +360,52 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1272,
+						"buffer_size": 999,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								402,
-								402
+								657,
+								657
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": -0.0,
-						"translation.y": 54.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "TypeScriptTest.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
