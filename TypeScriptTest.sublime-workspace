@@ -1,0 +1,461 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mo",
+				" ○ module (method) angular.IAngularStatic.module(name: string, requires?: string[], configFn?: Function): ng.IModule"
+			],
+			[
+				"re",
+				"require	keyword"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"a",
+				"alert	method"
+			],
+			[
+				"w",
+				"window	var"
+			],
+			[
+				"get",
+				"getElementById	method"
+			],
+			[
+				"sa",
+				"SampleModule	module"
+			],
+			[
+				"log",
+				"log	console log"
+			],
+			[
+				"lo",
+				"log	console log"
+			],
+			[
+				"sample",
+				" ♦ SampleClass class MyModyle.SampleClass"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"su",
+				"subscription"
+			],
+			[
+				"i",
+				"index"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.ts",
+			"settings":
+			{
+				"buffer_size": 396,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1272,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 135.0,
+		"last_filter": "remove",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"set",
+				"Set Syntax: Python"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"types",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rmv",
+				"Package Control: Remove Package"
+			],
+			[
+				"arc",
+				"ArcticTypescript: Refactoring (DO NOT USE, Test only)"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pl",
+				"Package Control: Remove Package"
+			],
+			[
+				"t",
+				"TypeScript: FormatSelection"
+			],
+			[
+				"typesc",
+				"TypeScript: FormatSelection"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"INSTALL PA",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"instA",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"npm",
+			"sys.path",
+			"import sys"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/TypeScriptTest"
+	],
+	"file_history":
+	[
+		"/c/projects/typescripttest/tsconfig.json",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/ArcticTypescript/examples/basic_browser_project/tsconfig.json",
+		"/C/Projects/TypeScriptTest/tsconfig.json",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Projects/TypeScriptTest/package.json",
+		"/C/Projects/TypeScriptTest/.tsdrc",
+		"/C/Projects/TypeScriptTest/main.ts",
+		"/C/Projects/TypeScriptTest/TypeScriptTest.sublime-project",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/TypeScript/tsserver/lib.d.ts",
+		"/C/Temp/1/tsconfig.json",
+		"/C/Temp/1/main.ts",
+		"/C/Projects/TypeScriptTest/sample.ts",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/ArcticTypescript/README.md",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/Better TypeScript/TypeScript.sublime-settings",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/User/TypeScript.sublime-settings",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/User/typescript.sublime-build",
+		"/C/Projects/TypeScriptTest/sample.js",
+		"/C/Projects/TypeScriptTest/TypeScriptTest",
+		"/C/Projects/AngularJS/demoCtrl.js",
+		"/C/Projects/AngularJS/angular.d.ts",
+		"/C/Projects/AngularJS/content/breeze.directives.css",
+		"/C/Projects/AngularJS/social.js",
+		"/C/Projects/AngularJS/AngularJS.sublime-project",
+		"/C/Projects/ReactAngularRxJs/index.html",
+		"/C/Projects/ReactAngularRxJs/app.js",
+		"/C/Projects/ReactAngularRxJs/step6.html",
+		"/C/Projects/RxJS/examples/test1/example.html",
+		"/C/Projects/RxJS/examples/autocomplete/autocomplete.html",
+		"/C/Projects/AngularJS/index1.html",
+		"/C/Projects/RxJS/examples/test1/example.js",
+		"/C/Projects/RxJS/examples/autocomplete/autocomplete.js",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"}};",
+			"main",
+			"\n        ",
+			"!",
+			"	",
+			"!	",
+			"!"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"!	",
+			"html5",
+			"!"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								343,
+								343
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/ArcticTypescript/theme/Typescript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 89.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.typescript_output":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "TypeScriptTest.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Projects\\AngularJS\\AngularJS.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 365.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
