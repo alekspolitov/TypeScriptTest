@@ -4,8 +4,7 @@ var gulp = require("gulp"),
 	tsify = require('tsify'),
 	exorcist = require('exorcist'),
 	source = require('vinyl-source-stream'),
-	gutil = require('gulp-util'),
-	watchify = require('watchify');
+	gutil = require('gulp-util');
 
 var config = {
 	paths: {
