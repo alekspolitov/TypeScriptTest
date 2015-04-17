@@ -1,10 +1,10 @@
-var gulp = require("gulp"),
-	browserify = require('browserify'),
-	debowerify = require('debowerify'),
-	tsify = require('tsify'),
-	exorcist = require('exorcist'),
-	source = require('vinyl-source-stream'),
-	gutil = require('gulp-util');
+var gulp 		= require("gulp"),
+	browserify 	= require('browserify'),
+	debowerify 	= require('debowerify'),
+	tsify 		= require('tsify'),
+	exorcist 	= require('exorcist'),
+	source 		= require('vinyl-source-stream'),
+	gutil 		= require('gulp-util');
 
 var config = {
 	paths: {
@@ -39,8 +39,20 @@ gulp.task('compile-ts', function() {
 
 });
 
+gulp.task('empty', function(){
+	
+});
+
+gulp.task('future-ts',  function(){
+	gulp.src('tsconfig.json')
+	  .pipe(typescript.resolveProjects())
+	  .pipe(sourcemaps.init())
+	  .pipe(typescript({ noExternalResolve: true }))
+	  .pipe(sourcemaps.write())
+});
+
 gulp.task("watch", function() {
 	gulp.watch(config.paths.ts, ["compile-ts"]);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['compile-ts','watch']);

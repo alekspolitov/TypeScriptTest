@@ -84,18 +84,10 @@
 			}
 		},
 		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 999,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "TypeScriptTest.sublime-project",
 			"settings":
 			{
-				"buffer_size": 165,
+				"buffer_size": 168,
 				"line_ending": "Unix"
 			}
 		}
@@ -235,8 +227,8 @@
 	],
 	"file_history":
 	[
-		"/C/Projects/TypeScriptTest/package.json",
 		"/C/Projects/TypeScriptTest/gulpfile.js",
+		"/C/Projects/TypeScriptTest/package.json",
 		"/c/projects/typescripttest/typings/jquery/jquery.d.ts",
 		"/c/projects/typescripttest/tsconfig.json",
 		"/C/Users/apolitov/AppData/Roaming/Sublime Text 3/Packages/ArcticTypescript/examples/basic_browser_project/tsconfig.json",
@@ -317,7 +309,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -333,8 +325,8 @@
 						"selection":
 						[
 							[
-								499,
-								499
+								263,
+								263
 							]
 						],
 						"settings":
@@ -351,53 +343,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 999,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								657,
-								657
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "TypeScriptTest.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 165,
+						"buffer_size": 168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								157,
+								157
 							]
 						],
 						"settings":
