@@ -2,16 +2,14 @@
   "version": 3,
   "sources": [
     "node_modules/browserify/node_modules/browser-pack/_prelude.js",
-    "main.ts",
-    "node_modules/browserify/lib/_empty.js"
+    "main.ts"
   ],
   "names": [],
-  "mappings": "AAAA;ACAA,yCAAyC;AAEzC,IAAO,CAAC,WAAW,QAAQ,CAAC,CAAC;AAE7B,IAAO,YAAY,CAclB;AAdD,WAAO,YAAY,EAAA,CAAC;IACnB,IAAa,OAAO;QAIhB,SAJS,OAAO,CAIJ,OAAU;YAClB,IAAI,CAAC,QAAQ,GAAG,OAAO,CAAC;QAC5B,CAAC;QACD,uBAAK,GAAL;YACC,AACA,gDADgD;YAChD,CAAC,CAAC,MAAM,CAAC,CAAC,IAAI,CAAc,IAAI,CAAC,QAAQ,CAAC,CAAC;YACxC,MAAM,CAAC,IAAI,CAAC,QAAQ,CAAC;QACzB,CAAC;QATS,cAAM,GAAW,SAAS,CAAC;QAUzC,cAAC;IAAD,CAZA,AAYC,IAAA;IAZY,oBAAO,GAAP,OAYZ,CAAA;AACF,CAAC,EAdM,YAAY,KAAZ,YAAY,QAclB;AAED,IAAI,MAAM,GAAG,IAAI,YAAY,CAAC,OAAO,CAAS,MAAM,CAAC,CAAC;AACtD,MAAM,CAAC,KAAK,EAAE,CAAC;;;ACrBf",
+  "mappings": "AAAA;ACAA,yCAAyC;AAEzC,IAAO,CAAC,WAAW,QAAQ,CAAC,CAAC;AAE7B,IAAO,YAAY,CAclB;AAdD,WAAO,YAAY,EAAA,CAAC;IACnB,IAAa,OAAO;QAIhB,SAJS,OAAO,CAIJ,OAAU;YAClB,IAAI,CAAC,QAAQ,GAAG,OAAO,CAAC;QAC5B,CAAC;QACD,uBAAK,GAAL;YACC,AACA,gDADgD;YAChD,CAAC,CAAC,UAAU,CAAC,CAAC,MAAM,CAAe,IAAI,CAAC,QAAQ,CAAC,CAAC;YAC/C,MAAM,CAAC,IAAI,CAAC,QAAQ,CAAC;QACzB,CAAC;QATS,cAAM,GAAW,SAAS,CAAC;QAUzC,cAAC;IAAD,CAZA,AAYC,IAAA;IAZY,oBAAO,GAAP,OAYZ,CAAA;AACF,CAAC,EAdM,YAAY,KAAZ,YAAY,QAclB;AAED,IAAI,MAAM,GAAG,IAAI,YAAY,CAAC,OAAO,CAAS,MAAM,CAAC,CAAC;AACtD,MAAM,CAAC,WAAW,CAAC,cAAM,OAAA,MAAM,CAAC,KAAK,EAAE,EAAd,CAAc,EAAE,IAAI,CAAC,CAAC",
   "file": "generated.js",
   "sourceRoot": "",
   "sourcesContent": [
     "(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==\"function\"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error(\"Cannot find module '\"+o+\"'\");throw f.code=\"MODULE_NOT_FOUND\",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require==\"function\"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})",
-    "/// <reference path=\"typings/tsd.d.ts\" />\r\n\r\nimport $ = require(\"jquery\");\r\n\r\nmodule SampleModule{\r\n\texport class Greeter<T> {\r\n        \r\n        static GLOBAL: string = \"GLOBAL2\";\r\n    \tgreeting: T;\r\n    \tconstructor(message: T) {\r\n        \tthis.greeting = message;\r\n    \t}\r\n\t    greet() {\r\n\t    \t//var data: string = <string><any>this.greeting;\r\n\t    \t$(\".log\").text(<string><any>this.greeting);\r\n\t        return this.greeting;\r\n\t    }\r\n\t}\r\n}\r\n\r\nvar sample = new SampleModule.Greeter<string>(\"text\");\r\nsample.greet();\r\n",
-    null
+    "/// <reference path=\"typings/tsd.d.ts\" />\r\n\r\nimport $ = require(\"jquery\");\r\n\r\nmodule SampleModule{\r\n\texport class Greeter<T> {\r\n        \r\n        static GLOBAL: string = \"GLOBAL2\";\r\n    \tgreeting: T;\r\n    \tconstructor(message: T) {\r\n        \tthis.greeting = message;\r\n    \t}\r\n\t    greet() {\r\n\t    \t//var data: string = <string><any>this.greeting;\r\n\t    \t$(\"#content\").append( <string><any>this.greeting);\r\n\t        return this.greeting;\r\n\t    }\r\n\t}\r\n}\r\n\r\nvar sample = new SampleModule.Greeter<string>(\"text\");\r\nwindow.setInterval(() => sample.greet(), 2000);\r\n\r\n"
   ]
 }

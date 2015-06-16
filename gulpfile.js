@@ -23,9 +23,9 @@ gulp.task('compile-ts', function() {
 	
 	var b = browserify(opts)
 		.add(config.paths.app + '/main.ts')
-		.ignore('jquery')
-		.ignore('angular')
+		.external('jquery')
 		.plugin(tsify, {
+			removeComments: true,
 			noImplicitAny: true,
 			target: 'es5'
 		})

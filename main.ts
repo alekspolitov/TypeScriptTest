@@ -12,11 +12,12 @@ module SampleModule{
     	}
 	    greet() {
 	    	//var data: string = <string><any>this.greeting;
-	    	$(".log").text(<string><any>this.greeting);
+	    	$("#content").append( <string><any>this.greeting);
 	        return this.greeting;
 	    }
 	}
 }
 
 var sample = new SampleModule.Greeter<string>("text");
-sample.greet();
+window.setInterval(() => sample.greet(), 2000);
+
