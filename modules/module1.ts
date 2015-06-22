@@ -1,5 +1,5 @@
-export module Core {
-	export class UserModel {
+
+	 export class UserModel {
 		private name: string = "";
 		private id: number = 0;
 		constructor(name: string, id: number) {
@@ -11,8 +11,9 @@ export module Core {
 		}
 	}
 	
-	function SampleFunc(){
+	export function SampleFunc(){
 		return "";
 	}
-}
+
+
 	

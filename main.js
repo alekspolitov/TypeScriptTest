@@ -1,6 +1,6 @@
 /// <reference path="typings/tsd.d.ts" />
 var $ = require("jquery");
-var userModel = require("./modules/module1");
+var Core = require("./modules/module1");
 var App;
 (function (App) {
     var Greeter = (function () {
@@ -12,7 +12,7 @@ var App;
             return this.greeting;
         };
         Greeter.prototype.getUser = function () {
-            var model = new userModel.Core.UserModel("Aleks Politov", 1);
+            var model = new Core.UserModel("Aleks Politov", 1);
             $("#content").append(model.toString());
             return model.toString();
         };
