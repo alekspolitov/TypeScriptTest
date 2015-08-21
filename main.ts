@@ -1,8 +1,10 @@
 /// <reference path="typings/tsd.d.ts" />
 ///https://blog.oio.de/2014/01/31/an-introduction-to-typescript-module-system/
-import $ = require("jquery");
-import Core = require("./modules/module1");
+//import $ = require("jquery");
+//import Core = require("./modules/module1");
+/// <reference path="modules/module1.ts" />
 
+//import userModule = UserModule;
 
 module App {
 	export class Greeter<T> {
@@ -18,10 +20,9 @@ module App {
 	        return this.greeting;
 	    }
 		getUser(): string {
-			
-			var model = new Core.UserModel("Aleks Politov", 1);
+			var model = new UserModule.UserModel("Aleks Politov", 1);
 			$("#content").append(model.toString());
-			return model.toString() + Core.SampleFunc();
+			return model.toString() + UserModule.SampleFunc();
 		}
 		
 	}

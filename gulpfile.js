@@ -4,7 +4,10 @@ var gulp 		= require("gulp"),
 	tsify 		= require('tsify'),
 	exorcist 	= require('exorcist'),
 	source 		= require('vinyl-source-stream'),
-	gutil 		= require('gulp-util');
+	gutil 		= require('gulp-util'),
+	ts 			= require('gulp-typescript'),
+	iife 		= require("gulp-iife"),
+	wrap 		= require("gulp-wrap");
 
 var config = {
 	paths: {
@@ -37,6 +40,18 @@ gulp.task('compile-ts', function() {
 		.pipe(source('app.js'))
 		.pipe(gulp.dest(config.paths.pub));
 
+});
+gulp.task('compile-typescript', function() {
+	var tsResult = gulp.src(config.paths.app + '/main.ts')
+    	.pipe(ts({
+        	noImplicitAny: true,
+        	out: 'app.js',
+        	target: "es5",
+      }));
+	  return tsResult.js
+	  	.pipe(wrap({ src: 'template.txt'}))
+	   	//.pipe(wrap('(function($){\n"use strict";\n<%= contents %>\n})(jQuery);'))
+	  	.pipe(gulp.dest(config.paths.pub));
 });
 
 gulp.task('empty', function(){
