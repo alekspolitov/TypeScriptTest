@@ -1,20 +1,18 @@
 {
-   
     "compilerOptions": {
         "target": "es5",
-        "module": "commonjs",
+        "module": "amd",
+        "moduleResolution": "classic",
+        "experimentalDecorators": true,
+        "outFile": "./main.js",
         "declaration": false,
         "noImplicitAny": false,
         "removeComments": true,
-        "noLib": false
+        "noLib": false,
+        "allowSyntheticDefaultImports": true
     },
-     "filesGlob": [
-        "./*.ts",
-        "!./node_modules/**/*.ts"
-    ],
     "files": [
         "./main.ts"
-     
     ],
     "compileOnSave": true
 }

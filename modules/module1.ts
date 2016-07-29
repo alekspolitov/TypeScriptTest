@@ -1,6 +1,9 @@
 //import Service = require('./services/services');
-/// <reference path="services/services.ts" />
-module UserModule {
+
+//--/// <reference path="./services/services.ts" />
+import { Services } from "./services/services";
+
+export namespace UserModule {
 	export class UserModel {
 		private name: string = "";
 		private id: number = 0;
@@ -23,6 +26,3 @@ module UserModule {
 		return "";
 	}
 }
-
-
-	

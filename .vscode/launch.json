@@ -1,0 +1,22 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+         {
+            "name": "Launch localhost with sourcemaps",
+            "diagnosticLogging": true,
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost/typescripttest/index.html",
+            "file": "${workspaceRoot}/index.html",
+            "webRoot": "${workspaceRoot}",
+            "sourceMaps": true
+        },
+		{
+			"name": "Attach with sourcemaps",
+			"type": "chrome",
+			"request":"attach",
+			"port": 9222,
+            "sourceMaps": true
+		}
+	]
+}

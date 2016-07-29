@@ -1,16 +1,18 @@
 {
     "version": "0.1.0",
     "command": "gulp",
+    "showOutput": "silent",
     "isShellCommand": true,
     "args": [
         "--no-color"
     ],
     "tasks": [
         {
-            "taskName": "compile-ts",
+            "taskName": "compile-project",
+            "showOutput": "always",
             "args": [],
             "isBuildCommand": true,
-            "problemMatcher": []
+            "problemMatcher": "$gulp-tsc"
         }
-    ]
+    ] 
 }

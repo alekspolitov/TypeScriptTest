@@ -2,13 +2,14 @@
 ///https://blog.oio.de/2014/01/31/an-introduction-to-typescript-module-system/
 //import $ = require("jquery");
 //import Core = require("./modules/module1");
-/// <reference path="modules/module1.ts" />
 
-//import userModule = UserModule;
+//--/// <reference path="./modules/module1.ts" />
 
-module App {
+import { UserModule }  from "./modules/module1";
+
+namespace App {
 	export class Greeter<T> {
-        
+		
         static GLOBAL: string = "GLOBAL2";
     	greeting: T;
     	constructor(message: T) {
@@ -21,7 +22,7 @@ module App {
 	    }
 		getUser(): string {
 			var model = new UserModule.UserModel("Aleks Politov", 1);
-			$("#content").append(model.toString());
+			$("#content").append(model.toString() + "<br/>");
 			return model.toString() + UserModule.SampleFunc();
 		}
 		
