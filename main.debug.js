@@ -64,7 +64,7 @@ define("main", ["require", "exports", "modules/module1"], function (require, exp
             return Greeter;
         }());
         App.Greeter = Greeter;
-    })(App || (App = {}));
+    })(App = exports.App || (exports.App = {}));
     var sample = new App.Greeter("text");
     window.setInterval(function () { return sample.getUser(); }, 2000);
 });
