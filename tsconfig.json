@@ -1,18 +1,17 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "amd",
-        "moduleResolution": "classic",
-        "experimentalDecorators": true,
-        "outFile": "./main.js",
+        "module": "commonjs",
         "declaration": false,
         "noImplicitAny": false,
         "removeComments": true,
         "noLib": false,
-        "allowSyntheticDefaultImports": true
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true
     },
-    "files": [
-        "./main.ts"
+    "exclude": [
+        "node_modules"
     ],
-    "compileOnSave": true
+    "compileOnSave": false
 }

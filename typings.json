@@ -1,12 +1,17 @@
 {
   "name": "TypeScriptTest",
-  "dependencies": {},
+  "dependencies": {
+    "glob": "registry:npm/glob#6.0.0+20160723033700",
+    "orchestrator": "registry:npm/orchestrator#0.3.7+20160723033700",
+    "vinyl": "registry:npm/vinyl#1.2.0+20160817093728"
+  },
   "resolution": {
     "main": "typings"
   },
   "globalDependencies": {
     "angular": "registry:dt/angular#1.5.0+20160802155123",
+    "gulp": "registry:dt/gulp#3.8.0+20160907112908",
     "jquery": "registry:dt/jquery#1.10.0+20160704162008",
-    "require": "registry:dt/require#2.1.20+20160316155526"
+    "node": "registry:env/node#6.0.0+20160918225031"
   }
 }

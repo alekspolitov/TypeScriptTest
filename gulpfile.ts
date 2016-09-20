@@ -1,5 +1,6 @@
-var gulp = require("gulp"),
-    browserify = require('browserify'),
+import * as gulp from 'gulp';
+
+var browserify = require('browserify'),
     debowerify = require('debowerify'),
     tsify = require('tsify'),
     exorcist = require('exorcist'),
@@ -18,7 +19,8 @@ var config = {
         ts: ["./*.ts", "typings/**/*.ts", "!node_modules/**/*.ts"],
         jsresult: 'main.js',
         app: __dirname,
-        pub: __dirname
+        pub: __dirname,
+        ignore: ''
     }
 };
 
@@ -56,7 +58,7 @@ gulp.task('compile-project', function () {
     var entry = config.paths.app + '/main.ts';
     var fileName = path.basename(entry, path.extname(entry)) + ".js";
 
-    var project = ts.createProject('tsconfig.json', {
+    var project = ts.createProject('tsconfig_m.json', {
         outFile: fileName
     });
 
@@ -105,43 +107,43 @@ gulp.task('empty', function () {
 
 });
 
-gulp.task('compile-tsc', function () {
-    var opts = {
-        ignore: config.paths.ignore
-    };
-    var streamFinished = function () {
-        gutil.log('End stream');
-    };
+// gulp.task('compile-tsc', function () {
+//     var opts = {
+//         ignore: config.paths.ignore
+//     };
+//     var streamFinished = function () {
+//         gutil.log('End stream');
+//     };
 
-    return glob(config.paths.ts, opts, function (err, files) {
-        var tasks = files.map(function (entry) {
-            gutil.log('Compiling file: ' + entry);
-            var fileName = path.basename(entry, path.extname(entry)) + ".js";
-            return gulp.src(entry)
-                .pipe(ts({
-                    noImplicitAny: false,
-                    outFile: fileName,
-                    removeComments: true,
+//     return glob(config.paths.ts, opts, function (err, files) {
+//         var tasks = files.map(function (entry) {
+//             gutil.log('Compiling file: ' + entry);
+//             var fileName = path.basename(entry, path.extname(entry)) + ".js";
+//             return gulp.src(entry)
+//                 .pipe(ts({
+//                     noImplicitAny: false,
+//                     outFile: fileName,
+//                     removeComments: true,
 
-                }))
-                .pipe(wrap({ src: 'template.txt' }))
-                .pipe(rename({ suffix: '.debug' }))
-                .pipe(gulp.dest(config.paths.pub))
-                .pipe(uglify())
-                .pipe(rename(fileName))
-                .pipe(gulp.dest(config.paths.pub));
-        });
-        return es.merge.apply(null, tasks)
-            .on('end', streamFinished);
-    });
-});
-gulp.task('future-ts', function () {
-    gulp.src('tsconfig.json')
-        .pipe(typescript.resolveProjects())
-        .pipe(sourcemaps.init())
-        .pipe(typescript({ noExternalResolve: true }))
-        .pipe(sourcemaps.write())
-});
+//                 }))
+//                 .pipe(wrap({ src: 'template.txt' }))
+//                 .pipe(rename({ suffix: '.debug' }))
+//                 .pipe(gulp.dest(config.paths.pub))
+//                 .pipe(uglify())
+//                 .pipe(rename(fileName))
+//                 .pipe(gulp.dest(config.paths.pub));
+//         });
+//         return es.merge.apply(null, tasks)
+//             .on('end', streamFinished);
+//     });
+// });
+// gulp.task('future-ts', function () {
+//     gulp.src('tsconfig.json')
+//         .pipe(typescript.resolveProjects())
+//         .pipe(sourcemaps.init())
+//         .pipe(typescript({ noExternalResolve: true }))
+//         .pipe(sourcemaps.write())
+// });
 
 gulp.task("watch", function () {
     gulp.watch(config.paths.ts, ["compile-ts"]);
