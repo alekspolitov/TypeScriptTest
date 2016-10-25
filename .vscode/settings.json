@@ -7,4 +7,6 @@
         ".*": true,
         "*.debug.js": true
     }
+,
+"typescript.check.workspaceVersion": false
 }

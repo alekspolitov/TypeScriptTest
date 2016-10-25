@@ -12,7 +12,8 @@ var browserify = require('browserify'),
     path = require("path"),
     uglify = require("gulp-uglify"),
     rename = require("gulp-rename"),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    Builder = require('systemjs-builder');
 
 var config = {
     paths: {
@@ -47,6 +48,46 @@ gulp.task('compile-ts', function () {
         .pipe(gulp.dest(config.paths.pub));
 
 });
+gulp.task('build-ts', function () {
+    var opts = {
+        basedir: config.paths.app,
+        debug: true
+    };
+
+    var builder = new Builder;
+
+    builder.config({
+        baseUrl: './',
+        defaultJSExtensions: false,
+        transpiler: 'typescript',
+        map: {
+            typescript: 'node_modules/typescript/lib/typescript.js'
+            //typescript: 'node_modules/plugin-typescript/lib/plugin.js'
+        },
+        packages: {
+            "modules": {
+                "main": "main",
+                "defaultExtension": "ts",
+                "meta": {
+                    "*.ts": {
+                        "loader": "typescript"
+                    }
+                }
+            }
+        }
+    });
+
+    builder.buildStatic('./main.ts', './main.js', { minify: false, sourceMaps: false })
+        .then(function () {
+            console.log('Build complete');
+        })
+        .catch(function (err) {
+            console.log('Build error');
+            console.log(err);
+        });
+
+});
+
 gulp.task('compile-project', function () {
     var opts = {
         basedir: config.paths.app,
