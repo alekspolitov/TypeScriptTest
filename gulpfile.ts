@@ -1,19 +1,17 @@
 import * as gulp from 'gulp';
 
 var browserify = require('browserify'),
-    debowerify = require('debowerify'),
-    tsify = require('tsify'),
-    exorcist = require('exorcist'),
-    source = require('vinyl-source-stream'),
-    gutil = require('gulp-util'),
-    ts = require('gulp-typescript'),
-    iife = require("gulp-iife"),
-    wrap = require("gulp-wrap"),
-    path = require("path"),
-    uglify = require("gulp-uglify"),
     rename = require("gulp-rename"),
-    sourcemaps = require('gulp-sourcemaps'),
-    Builder = require('systemjs-builder');
+    ts = require('gulp-typescript'),
+    path = require("path"),
+    source = require('vinyl-source-stream'),
+    wrap = require("gulp-wrap"),
+    uglify = require("gulp-uglify"),
+    tsify = require('tsify'),
+    gutil = require('gulp-util'),
+    Builder = require('systemjs-builder'),
+    exorcist = require('exorcist'),
+    debowerify = require('debowerify');
 
 var config = {
     paths: {
@@ -81,7 +79,7 @@ gulp.task('build-ts', function () {
         .then(function () {
             console.log('Build complete');
         })
-        .catch(function (err) {
+        .catch((err: any) => {
             console.log('Build error');
             console.log(err);
         });
@@ -104,7 +102,7 @@ gulp.task('compile-project', function () {
     });
 
     var tsResult = project.src()
-        .pipe(ts(project))
+        .pipe(project())
         .pipe(wrap({ src: 'template.txt' }))
         .pipe(gulp.dest(config.paths.pub))
         .pipe(rename({ suffix: '.debug' }))

@@ -61,15 +61,18 @@ System.register("modules/module1", ["modules/services/services"], function(expor
         }
     }
 });
-System.register("main", ["modules/module1"], function(exports_3, context_3) {
+System.register("main", ["modules/module1", "jquery"], function(exports_3, context_3) {
     "use strict";
     var __moduleName = context_3 && context_3.id;
-    var module1_1;
+    var module1_1, $;
     var App, sample;
     return {
         setters:[
             function (module1_1_1) {
                 module1_1 = module1_1_1;
+            },
+            function ($_1) {
+                $ = $_1;
             }],
         execute: function() {
             (function (App) {
@@ -78,6 +81,9 @@ System.register("main", ["modules/module1"], function(exports_3, context_3) {
                         this.greeting = message;
                     }
                     Greeter.prototype.greet = function () {
+                        var y;
+                        var x = { id: "id1", name: "name1" };
+                        var name = x.name;
                         $("#content").append(this.greeting);
                         return this.greeting;
                     };

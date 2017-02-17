@@ -9,7 +9,9 @@
         "noImplicitAny": false,
         "removeComments": true,
         "noLib": false,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "lib": [ "es2015", "dom" ],
+        "typeRoots": []
     },
     "files": [
         "./main.ts"

@@ -13,5 +13,8 @@
     "gulp": "registry:dt/gulp#3.8.0+20160907112908",
     "jquery": "registry:dt/jquery#1.10.0+20160704162008",
     "node": "registry:env/node#6.0.0+20160918225031"
+  },
+  "globalDevDependencies": {
+    "systemjs": "registry:dt/systemjs#0.19.29+20160702105636"
   }
 }

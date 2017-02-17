@@ -6,8 +6,13 @@
 //--/// <reference path="./modules/module1.ts" />
 
 import { UserModule }  from "./modules/module1";
+import * as $ from "jquery";
 
 export namespace  App {
+	interface IEntity{
+		readonly id?: string;
+		name?: string;
+	}
 	export class Greeter<T> {
 
         static GLOBAL: string = "GLOBAL2";
@@ -16,10 +21,16 @@ export namespace  App {
 			this.greeting = message;
 		}
 		greet() {
+			let y: number | undefined;
+			let x: IEntity  = { id: "id1", name: "name1"};
+			let name = x!.name;
+
+
 			//var data: string = <string><any>this.greeting;
 			$("#content").append(<string><any>this.greeting);
 			return this.greeting;
 		}
+	
 		getUser(): string {
 			var model = new UserModule.UserModel("Aleks Politov", 1);
 			$("#content").append(model.toString() + "<br/>");
