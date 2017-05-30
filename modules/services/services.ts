@@ -1,4 +1,4 @@
-module Services {
+export namespace Services {
 	export class MyService {
 		private serviceName: string;
 
