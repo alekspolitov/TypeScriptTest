@@ -20,7 +20,8 @@ module App {
 	        return this.greeting;
 	    }
 		getUser(): string {
-			var model = new UserModule.UserModel("Aleks Politov", 1);
+	
+			var model = new UserModule.UserMode("Aleks Politov", 1);
 			$("#content").append(model.toString());
 			return model.toString() + UserModule.SampleFunc();
 		}
